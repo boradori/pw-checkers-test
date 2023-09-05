@@ -1,0 +1,23 @@
+{
+  "name": "pw-checkers-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "playwright test --config=playwright.config.ts --project=chromium",
+    "test:ff": "playwright test --config=playwright.config.ts --project=firefox",
+    "test:webkit": "playwright test --config=playwright.config.ts --project=webkit",
+    "test:chrome-headed": "playwright test --config=playwright.config.ts --project=chromium --headed",
+    "test:ff-headed": "playwright test --config=playwright.config.ts --project=firefox --headed",
+    "test:webkit-headed": "playwright test --config=playwright.config.ts --project=webkit --headed",
+    "test:chrome-ui": "playwright test --config=playwright.config.ts --project=chromium --ui",
+    "test:ff-ui": "playwright test --config=playwright.config.ts --project=firefox --ui",
+    "test:webkit-ui": "playwright test --config=playwright.config.ts --project=webkit --ui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.37.1"
+  }
+}
